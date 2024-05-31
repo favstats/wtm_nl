@@ -9,11 +9,13 @@ website:
       - href: index.qmd
         text: Spending
       - sidebar:targeting
+      - href: foverview.qmd
+        text: Overview
       - href: about.qmd
         text: About
     right:
       - icon: github
-        href: https://github.com/favstats/betargex
+        href: https://github.com/favstats/wtm_nl
   sidebar:
     - id: ""
     - id: targeting

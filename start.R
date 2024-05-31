@@ -61,7 +61,7 @@ try({
     
     write_lines(nrow(all_dat), file = "n_advertisers.txt")
     render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
-    dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(render_it)
+    dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% rev() %>% walk(render_it)
     
     knitr::knit("README.Rmd")
     
